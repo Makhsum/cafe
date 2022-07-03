@@ -1,0 +1,197 @@
+
+/*большой пк*/
+@media (max-width: 1800px) {
+    .container{
+        max-width: 1700px;
+    }
+}
+/*плагшет*/
+@media (max-width: 991.1px) {
+    .container{
+        max-width: 990px;
+    }
+}
+/*phone*/
+@media (max-width: 709.1px) {
+    .header__btn{
+        font-size: 12px;
+    }
+}
+@media (max-width: 674.9px) {
+    .header__btn{
+        font-size: 12px;
+        
+    }
+    .btn{
+        height: 20px;
+        padding: 20px 14px 20px 14px;
+    }
+    .header-bottom__image{
+        display: none;
+    }
+    .header-bottom__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo{
+        background: url("../img/adaptive/xsmall.svg") no-repeat;
+        flex: 0 0 178px;
+        height: 90px;
+    }
+}
+
+
+/*small-phone_________________________________________________________________*/
+@media (max-width: 496.9px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header-bottom__text{
+        display: block;
+        
+    }
+    .header-bottom__link{
+        margin: 20px 0px 0px 55%;
+    }
+    .header-bottom{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        background-color: #292E36;
+        justify-content: center;
+        align-items: center;
+        -webkit-transition:  all 0.5s ease 0s;-moz-transition: all 0.3s ease 0s;-ms-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
+        overflow: auto;
+    }    
+    .header-bottom.active{
+        left: -50%;
+    }
+    
+    
+    .header__logo{
+        background: url("../img/adaptive/phone__logo.svg") no-repeat;
+        flex: 0 0 198px;
+        height: 90px;
+        order: 1;
+
+    }
+    .header__btn1{
+        display: none;
+    }
+    .header__btn{
+        order: 2;
+    }
+    
+    
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
+    .header__burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    /*.header-bottom{*/
+    /*    display: none;*/
+    /*}*/
+    .header__burger:before,
+    .header__burger:after{
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        top: 9px;
+        height: 2px;
+        transition:all 0.4s ease 0s;    
+    }
+    
+    .header__burger:before{
+        top: 0;
+        transition:all 0.4s ease 0s;
+    }
+    .header__burger:after{
+        bottom: 0;
+        transition:all 0.4s ease 0s;
+    }
+    /*--------------------------------------------*/
+    .header-bottom__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-bottom__text {
+        padding: 16px 0px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .header-bottom__link {
+        display: flex;
+        font-family: 'Josefin Sans',sans-serif;
+        font-weight: 400;
+        gap: 15px;
+        flex-direction: column;
+
+    }
+    .header-bottom__link a{
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #fff;
+    }
+    
+    
+}
+
+@media (max-width: 374.9px) {
+
+    .header__logo{
+        background: url("../img/adaptive/xxsmall.svg") no-repeat;
+        flex: 0 0 120px;
+        height: 70px;
+        order: 2;
+
+    }
+    .header__btn {
+        order: 1;
+        font-size: 8px;
+        letter-spacing: 0.3px;
+        margin: 0px 5px 0px 5px;
+    }
+    .header__btn1{
+        display: flex;
+        order: 3;
+        font-size: 8px;
+        letter-spacing: 0.3px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .btn {
+        height: 20px;
+        padding: 15px 8px 15px 8px;
+       
+    }
+}
