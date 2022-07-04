@@ -1,30 +1,104 @@
 
 /*большой пк*/
-@media (max-width: 1800px) {
-    .container{
-        max-width: 1700px;
-    }
-}
-/*плагшет*/
-@media (max-width: 991.1px) {
+/*@media (max-width: 1800px) {*/
+/*    .container{*/
+/*        max-width: 1700px;*/
+/*    }*/
+/*}*/
+
+/*notebook*/
+@media (max-width: 1129.1px) {
     .container{
         max-width: 990px;
     }
+    .welcome__btn{
+        margin: 35px 0px 30px 20px;
+        background-color: #292E36;
+        color: #E1B168;
+        max-width: 35%;
+        line-height: 1.50625em;
+    }
+    .circle {
+        flex-direction: column;
+    }
+    .text{
+        padding: 0px 15px 0px 0px;
+    }
 }
-/*phone*/
-@media (max-width: 709.1px) {
+
+/*плагшет*/
+/*-------------------------------------------------------------------------*/
+@media (max-width: 991.9px) {
+    .container{
+        max-width: 800px;
+        padding: 0px 20px ;
+    }
+    .welcome__row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        margin: 40px 0px 0px 15px;
+    }
+    .welcome__image{
+        margin: 0px 4% 0px 4%;
+    }
+   .welcome-bottom__circle-image{
+       padding: 0px 0px 0px 30px;
+   }
+   .welcome__btn{
+       align-items: center;
+       
+       justify-content: center;
+   }
+   .welcome__title{
+       font-size: 437.5%;
+       line-height: 70px;
+   }
+   .welcome-bottom__circle-text{
+       font-size: 13px;
+       padding: 0px 0px 0px 0px;
+       line-height: 15px;
+   }
+
+}
+/*phone*//*-------------------------------------------------------------------------*/
+@media (max-width: 767.9px) {
     .header__btn{
         font-size: 12px;
     }
+    .welcome__image{
+        margin: 0px 12% 0px 8%;
+    }
+    .container{
+        max-width: none;
+    }
 }
-@media (max-width: 674.9px) {
+/*-------------------------------------------------------------------------*/
+@media (max-width: 715.9px) {
+   
+    .welcome__body{
+        
+    }
+    .welcome__image img{
+        height: 100%;
+        width: 100%;
+    }
+    .welcome__image{
+        /*margin: 0px 0% 0px 8%;*/
+        
+    }
     .header__btn{
         font-size: 12px;
         
     }
     .btn{
         height: 20px;
-        padding: 20px 14px 20px 14px;
+        padding: 20px 17px 20px 17px;
     }
     .header-bottom__image{
         display: none;
@@ -36,14 +110,31 @@
     }
     .header__logo{
         background: url("../img/adaptive/xsmall.svg") no-repeat;
-        flex: 0 0 178px;
+        flex: 0 0 158px;
         height: 90px;
+    }
+    .header-bottom{
+        position: fixed;
+        top: 0;
+        background-color: #292E36   ;
+        z-index: 4;
+        width: 100%;
+        border-bottom: 1px solid #5C6168;
+    }
+    .header{
+        border-bottom: 1px solid #5C6168;
+    }
+    .content{
+        padding: 50px 0px;
     }
 }
 
 
 /*small-phone_________________________________________________________________*/
-@media (max-width: 496.9px){
+@media (max-width: 517.9px){
+    .content{
+        padding: 0px 0px 0px 0px;
+    }
     body.lock{
         overflow: hidden;
     }
@@ -71,22 +162,41 @@
     .header-bottom.active{
         left: -50%;
     }
-    
-    
     .header__logo{
+        display: none;
+    }
+    
+    .header__logo1{
+        display: flex;
         background: url("../img/adaptive/phone__logo.svg") no-repeat;
         flex: 0 0 198px;
         height: 90px;
         order: 1;
-
+       
     }
     .header__btn1{
-        display: none;
+        width: 100%;
+        margin: 10px 0px ;
+    }
+    .header__body{
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+        align-self: flex-end;
+        order: 2;
+        /*position: relative;*/
+        /*top: 50px;                                                                                                                                                                                        */
     }
     .header__btn{
         order: 2;
+        margin: 10px 0px;
     }
-    
+    .header__row{
+        display: flex;
+        /*align-items: center;*/
+        justify-content: space-between;
+        align-items: center;
+    }
     
     .header__burger{
         display: block;
@@ -95,7 +205,7 @@
         height: 20px;
         top: 10px;
         left: 10px;
-        z-index: 2;
+        z-index: 5;
     }
     .header__burger.active:before{
         transform: rotate(45deg);
@@ -162,28 +272,61 @@
         letter-spacing: 0.2px;
         color: #fff;
     }
+    .welcome-bottom__body{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 0px 0px 20px;
+    }
+    .welcome-bottom__body:last-child{
+        justify-content: center;
+    }
+    .welcome-bottom__circle-image img{
+        height: 50px;
+    }
+    .welcome-bottom__circle-image{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .welcome-bottom__circle-text{
+        font-size: 10px;
+    }
+    .welcome-bottom__circle-title{
+        font-size: 90.5%;
+        line-height: 30px;
+    }
     
     
 }
-
+/*-------------------------------------------------------------------------*/
 @media (max-width: 374.9px) {
+    .welcome-bottom__body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .header__logo {
+        background: url("../img/adaptive/phone__logo.svg") no-repeat;
+        flex: 0 0 90px;
+        width: 198px;
+        order: 1;
+    }
+    .circle{
+        margin:20px 0px 20px 0px;
 
-    .header__logo{
-        background: url("../img/adaptive/xxsmall.svg") no-repeat;
-        flex: 0 0 120px;
-        height: 70px;
-        order: 2;
-
+    }
+    .circle:nth-child(1){
+        margin: 20px 0px 20px 30px;
+        
+    }  
+    .circle:nth-child(2){
+        margin: 20px 0px 20px 10px;
+    }  
+    .circle:nth-child(3){
     }
     .header__btn {
-        order: 1;
-        font-size: 8px;
-        letter-spacing: 0.3px;
-        margin: 0px 5px 0px 5px;
-    }
-    .header__btn1{
-        display: flex;
-        order: 3;
+        order: 2;
         font-size: 8px;
         letter-spacing: 0.3px;
         margin: 0px 5px 0px 5px;
@@ -192,6 +335,8 @@
     .btn {
         height: 20px;
         padding: 15px 8px 15px 8px;
-       
     }
+    .welcome__image{
+    }
+
 }
