@@ -1,0 +1,9 @@
+.blog-img-left__title {
+  font-size: calc(16px + 14 * ((100vw - 320px) / 1120));
+}
+
+.blog-img-left__text {
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
+}
+
+/*# sourceMappingURL=1.css.map */
